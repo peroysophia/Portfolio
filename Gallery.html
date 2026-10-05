@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery - GAIL-orithm</title>
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #8a5f8a, #1a1a2e);
+  color: #fff;
+  line-height: 1.6;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid #d8b8d8;
+}
+
+nav h2 {
+  color: #e8d9e8;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e8d9e8;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e6d6f7;
+}
+.gallery {
+  padding: 60px 40px;
+}
+
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e6d6f7;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid .image-placeholder {
+  width: 100%;
+  height: 200px;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid #d8b8d8;
+  margin-top: 40px;
+}
+.gallery {
+  text-align: center;   
+  margin: 40px auto;    
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  color: #e6d6f7;       
+  margin-bottom: 20px;  
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 250px); 
+  gap: 20px;
+  justify-content: center; 
+}
+/* Image styling */
+.image-item {
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 3px solid #e0b0ff;   /* Purple border */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Shadow */
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Keeps proportions, no stretching */
+  transition: transform 0.3s ease;
+}
+
+.image-item img:hover {
+  transform: scale(1.05); /* Zoom effect */
+}
+
+/* Video styling */
+.video-container video {
+  width: 300px;
+  max-width: 50%;
+  border-radius: 10px;
+  border: 3px solid #e0b0ff;   /* Purple border */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Shadow */
+}
+p {
+  color: #e6d6f7;       
+  margin-bottom: 20px;
+}
+
+
+
+
+</style>
+<body>
+   <nav>
+    <h2>GAIL-orithm</h2>
+    <ul>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\Home.html">Home</a></li>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\AboutMe.html">About Me</a></li>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\Portfolio.html">Portfolio</a></li>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\Gallery.html">Gallery</a></li>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="gallery">
+  <h2>Visual Gallery</h2>
+  <p>Images</p>
+  <div class="gallery-grid">
+    <div class="image-item"><img src="C:\Users\Sophia\Downloads\1.jpg" alt="Image 1"></div>
+    <div class="image-item"><img src="C:\Users\Sophia\Downloads\2.jpg" alt="Image 2"></div>
+    <div class="image-item"><img src="C:\Users\Sophia\Downloads\3.jpg" alt="Image 3"></div>
+    <div class="image-item"><img src="C:\Users\Sophia\Downloads\4.jpg" alt="Image 4"></div>
+    <div class="image-item"><img src="C:\Users\Sophia\Downloads\5.jpg" alt="Image 5"></div>
+    <div class="image-item"><img src="C:\Users\Sophia\Downloads\6.jpg" alt="Image 6"></div>
+  </div>
+  <br><br>
+  <p>Video</p>
+  <div class="video-container">
+    <video controls>
+      <source src="C:\Users\Sophia\Downloads\Vlog.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+
+  <footer>© 2026 Abbegail Peroy. All rights reserved.</footer>
+</body>
+</html>

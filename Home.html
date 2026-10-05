@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAIL-orithm</title>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #8a5f8a, #1a1a2e);
+  color: #fff;
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid #d8b8d8;
+}
+
+nav h2 {
+  color: #e8d9e8;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e8d9e8;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 40px;
+}
+
+.home-text {
+  max-width: 50%;
+}
+
+.home-text h1 {
+  font-size: 2.5rem;
+  color: #c8a2c8;
+}
+
+.home-text p {
+  margin: 20px 0;
+}
+
+.home-buttons button {
+  margin-right: 15px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  background: linear-gradient(90deg, #CDB9DD, #9580D4);
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+.home-buttons button:hover {
+  transform: scale(1.05);
+}
+
+.about {
+  padding: 60px 40px;
+}
+
+.about h1 {
+  font-size: 2rem;
+  color: #d8b8d8;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  margin-top: 30px;
+  color: #d8b8d8;
+}
+
+.about ul {
+  margin-top: 15px;
+  list-style: square;
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid #d8b8d8;
+  margin-top: 40px;
+}
+img {
+  width: 300px;      
+  height: 300px;      
+  object-fit: cover;  
+  border-radius: 10px; 
+}
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%; 
+  border: 3px solid #fff; 
+}
+img {
+  max-width: 100%;   
+  height: auto;      
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <h2>GAIL-orithm</h2>
+    <ul>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\Home.html">Home</a></li>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\AboutMe.html">About Me</a></li>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\Portfolio.html">Portfolio</a></li>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\Gallery.html">Gallery</a></li>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="home">
+    <div class="home-text">
+      <h1>MY CODES AND CREATIVITY</h1>
+      <p>Design. Develop. Grow.<br>
+      I’m Abby, an IT student passionate about turning challenges into opportunities
+       and creating solutions that inspire.</p>
+      <div class="home-buttons">
+        <button onclick="location.href='portfolio.html'">View Portfolio</button>
+        <button onclick="location.href='contact.html'">Get in Touch</button>
+      </div>
+    </div>
+    <div>
+      <img class="photo" src="C:\Users\Sophia\OneDrive\Pictures\photo.jpg"
+            width="300"
+            height="300">
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Abbegail Peroy. All rights reserved.
+  </footer>
+</body>
+</html>

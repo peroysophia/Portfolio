@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Project - GAIL-orithm</title>
+</head>
+<Style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #8a5f8a, #1a1a2e);
+  color: #fff;
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid #d8b8d8;
+}
+
+nav h2 {
+  color: #e8d9e8;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e8d9e8;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid #d8b8d8;
+  margin-top: 40px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e6d6f7;
+}
+.projects-container {
+  display: flex;         
+  gap: 30px;              
+  justify-content: center;
+  flex-wrap: wrap;        
+}
+
+.project {
+  text-align: center;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.CharCounter,
+.Attendance,
+.SignIn,
+.PersonalWebsite {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #CDB9DD, #9580D4);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.CharCounter:hover,
+.Attendance:hover,
+.SignIn:hover,
+.PersonalWebsite:hover {
+  transform: scale(1.05);
+}
+
+
+</style>
+<body>
+  <nav>
+    <h2>GAIL-orithm</h2>
+    <ul>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\Home.html">Home</a></li>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\AboutMe.html">About Me</a></li>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\Portfolio.html">Portfolio</a></li>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\Gallery.html">Gallery</a></li>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="project-detail">
+  <h1>Website Projects</h1>
+  
+  <div class="projects-container">
+    <!-- Character Counter -->
+    <div class="project">
+      <img src="\Users\Sophia\OneDrive\Pictures\Screenshots\CharCounter.png" width="300" height="300">
+      <p>Character Counter</p>
+      <button class="CharCounter" onclick="location.href=location.href='C:\\Users\\Sophia\\Desktop\\Assignment1\\CharacterCounter.html'">View Project</button>
+    </div>
+
+    <!-- Attendance -->
+    <div class="project">
+      <img src="C:\Users\Sophia\OneDrive\Pictures\Screenshots\attendance.png" width="300" height="300">
+      <p>Attendance</p>
+      <button class="Attendance" onclick="location.href='C:\\Users\\Sophia\\Desktop\\Assignment2\\Attendance.html'">View Project</button>
+    </div>
+
+    <!-- Input Validation -->
+    <div class="project">
+      <img src="C:\Users\Sophia\OneDrive\Pictures\Screenshots\inputValidation.png" width="300" height="300">
+      <p>Input Validation</p>
+      <button class="SignIn" onclick="location.href='C:\\Users\\Sophia\\Desktop\\Input Validation\\SignIn.html'">View Project</button>
+    </div>
+
+    <!-- Personal Website -->
+    <div class="project">
+      <img src="C:\Users\Sophia\OneDrive\Pictures\Screenshots\personalwebsite.png" width="300" height="300">
+      <p>Personal Website</p>
+      <button class="PersonalWebsite" onclick="location.href='C:\\Users\\Sophia\\Desktop\\Personal Website\\Home.html'">View Project</button>
+    </div>
+  </div>
+</section>
+  <footer>© 2026 Abbegail Peroy. All rights reserved.</footer>
+</body>
+</html>

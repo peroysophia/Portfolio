@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - GAIL-orithm</title>
+</head>
+<Style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #8a5f8a, #1a1a2e);
+  color: #fff;
+  line-height: 1.6;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid #d8b8d8;
+}
+
+nav h2 {
+  color: #e8d9e8;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e8d9e8;
+}
+.portfolio {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e6d6f7;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #e6d6f7;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card .image-placeholder {
+  width: 100%;
+  height: 150px;
+  background: #333;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #CDB9DD, #9580D4);
+  color: #fff;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid #d8b8d8;
+  margin-top: 40px;
+}
+.card.selected {
+  border: 2px solid #a87fa8;
+  box-shadow: 0 0 15px #a87fa8;
+  transform: scale(1.05);
+}
+.view-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  background: linear-gradient(90deg, #CDB9DD, #9580D4);
+  color: #fff;
+  font-weight: bold;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.view-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #9580D4,#CDB9DD );
+}
+</style>
+<body>
+   <nav>
+    <h2>GAIL-orithm</h2>
+    <ul>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\Home.html">Home</a></li>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\AboutMe.html">About Me</a></li>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\Portfolio.html">Portfolio</a></li>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\Gallery.html">Gallery</a></li>
+      <li><a href="C:\Users\Sophia\Desktop\Personal Website\Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="portfolio">
+    <h2>Selected Works</h2>
+    <div class="projects">
+      <div class="card">
+        <div class="image-placeholder">
+          <img src="C:\Users\Sophia\Downloads\websites.jpg" alt="Website Project" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
+        </div>
+        <p>A website is a collection of related web pages hosted on a server.</p>
+        <a href="C:\Users\Sophia\Desktop\Personal Website\Firstwork.html" class="view-btn">View Project</a>
+      </div>
+      <div class="card">
+        <div class="image-placeholder">
+          <img src="C:\Users\Sophia\Downloads\graphics.jpg" alt="Graphics Project" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
+        </div>
+        <p>Visual images or designs created to inform or entertain.</p>
+        <a href="C:\Users\Sophia\Desktop\Personal Website\Secondwork.html" class="view-btn">View Project</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>© 2026 Abbegail Peroy. All rights reserved.</footer>
+
+  <script>
+    // Make portfolio cards selectable
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('click', () => {
+    // Remove selection from other cards
+    document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
+    // Add selection to clicked card
+    card.classList.add('selected');
+
+    // Example action: show alert with project name
+    const projectName = card.getAttribute('data-project');
+    console.log(`Selected project: ${projectName}`);
+    // You can replace this with navigation or modal popup
+  });
+});
+
+  </script>
+</body>
+</html>
